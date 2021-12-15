@@ -1,5 +1,6 @@
 # Elk-Stack-Project
 First Project for Cybersecurity certification class
+
 The files in this repository were used to configure the network depicted below.
 
 ![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
