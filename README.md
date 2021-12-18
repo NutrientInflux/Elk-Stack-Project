@@ -70,9 +70,7 @@ The playbook implements the following tasks:
 - Launch docker container: elk
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-https://user-images.githubusercontent.com/89425182/146650245-fb38e437-15d6-427e-8ef0-7277d7789186.png
-
+![image (8)](https://user-images.githubusercontent.com/89425182/146650303-6aaf7ac9-7490-4066-8542-277bfb0f8063.png)
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - 10.0.0.5 & 10.0.0.6
