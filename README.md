@@ -30,7 +30,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat takes metrics and statistics and ships them to specified output.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -44,7 +43,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+- Home IP
 
 Machines within the network can only be accessed by home network IP
 - Jump box. IP 10.0.0.4
@@ -53,7 +52,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | Home Ip    |
+| Jump Box | Yes                 | Home Ip              |
 | Web-1    | No                  | 10.0.0.4             |
 | Web-2    | No                  | 10.0.0.4             |
 | Elkstack | No                  | 10.0.0.4             |
@@ -84,11 +83,11 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
+- Copy the roles file to /etc/ansible/roles.
 - Update the host file to include webserver IP's and ELKserver IP
 - Run the playbook, and navigate to HTTP://<ELKserver_public_IP>:5601 to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - the .yml file is the playbook and should be coppied to /etc/ansible/filebeat-configuration.yml
 - Edit the /etc/ansible/host file to add webserver/elkserver IP addresses
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- www.publicip:5601
